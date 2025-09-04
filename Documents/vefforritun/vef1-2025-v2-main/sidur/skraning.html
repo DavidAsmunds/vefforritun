@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skráning á sýningu á Listasafninu</title>
+    <meta property="og:title" content="Skráning á sýningu á Listasafninu">
+    <meta name="description" content="Skráðu þig eða hópinn þinn á sýningu hjá Listasafninu.">
+    <meta property="og:description" content="Skráðu þig eða hópinn þinn á sýningu hjá Listasafninu.">
+    <meta property="og:image" content="/myndir/sharing.jpg">
+  </head>
+  <body>
+    <header>
+        <h1>Skráning</h1>
+        <nav>
+            <ul>
+                <li><a href = "index.html" > Forsíða </a></li>
+                <li><a href = "um.html" > Nánar um starfsemina </a></li>
+                <li><a href = "syningar.html" > Nánar um sýningar </a></li>
+                <li><b> Skráning á síðuna</b></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="skraning">
+        <fieldset>
+            <legend>Sýning</legend>
+            <div>
+                <label for="syning_hvada"> Hvaða sýningu viljið þið skrá ykkur á?</label>
+                <select name="syning_hvada" id="syning_hvada">
+                    <option value="" disabled selected hidden>Veldu sýningu</option>
+                    <option value="syning1">Skuggar og Speglar</option>
+                </select>
+            </div>
+            <div>
+                <label for="syning_allt"> Allar sýningar sem í boði eru á völdum degi</label>
+                <input type="checkbox" name="syning_allt" id="syning_allt">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Hópur</legend>
+            <div>
+                <label for="hopur_fjoldi">Fjöldi í hóp</label>
+                <input type="number" name="hopur_fjoldi" id="hopur_fjoldi" min="1" max="40" step="1" value="1" required>
+            </div>
+            <div>
+                <label for="hopur_upplysingar">Upplýsingar um hópinn</label>
+                <textarea name="hopur_upplysingar" id="hopur_upplysingar" rows ="3" cols="40" required></textarea>
+            </div>
+            <div>
+            <label for="hopur_email"> Netfang tengiliðar</label> 
+            <input type="email" id="hopur_email" name ="hopur_email" required aria-details="hopur_email_details">
+            </div>
+            <div>
+                <label for="hopur_simanumer">Símanúmer</label>
+                <input type="tel" name="hopur_simanumer" id="hopur_simanumer" placeholder="000-0000">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dagsetning og tími</legend>
+            <div>
+                <label for="dags_timi_koma">Hvenær viljið þið koma?</label>
+                <input type="date" name="dags_timi_koma" id="dags_timi_koma">
+            </div>
+            <div>
+                <label for="dags_timi_kl">Klukkan hvað?</label>
+                <input type="time" name="dags_timi_kl" id="dags_timi_kl" step="1800" required>
+                <span>Mælt er með að taka tvær klukkustundir eða lengur fyrir sýningar í sal 1</span>
+            </div>
+            <div>
+                <label for="dags_timi_timi">Hve lengi?</label>
+                <select id="dags_timi_timi" name="dags_timi_timi" required>
+                    <option value="" disabled selected hidden>Veldu lengd</option>
+                    <option value="1">1 klst</option>
+                    <option value="1.5">1 klst 30 mín</option>
+                    <option value="2">2 klst</option>
+                    <option value="2.5">2 klst 30 mín</option>
+                    <option value="3">3 klst</option>
+                    <option value="3.5">3 klst 30 mín</option>
+                    <option value="4">4 klst</option>
+                    <option value="4.5">4 klst 30 mín</option>
+                    <option value="5">5 klst</option>
+                    
+                </select>
+                <span>Mælt er með að taka tvær klukkustundir eða lengur fyrir sýningar í sal 1</span>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Bóka</legend>
+            <div>
+                <label for="boka_samthykki"> Ég samþykki <a href = "um.html" target="_blank">skilmálanna</a> </label>
+                <input type="checkbox" id="boka_samthykki" name="boka_samthykki">
+            </div>
+            <div>
+                <input type="button" value="Panta og greiða">
+            </div>
+            
+        </fieldset>
+    </form>
+
+    <a href = "index.html" > Aftur á forsíðu. </a>
+    <footer>
+        <h1>
+            Opnunartímar
+        </h1>
+        <h2>
+            Skrifstofur
+        </h2>
+        <p>Mánudaga til föstudaga: 10:00-16:00</p>
+        <p> Helgar: Lokað </p> 
+
+        <h2>
+            Sýningarsalur
+        </h2>
+        <p>Mánudagar: 13:00-16:00</p>
+        <p>Þriðjudagur til föstudaga: 10:00-17:00</p>
+        <p>Helgar: 13:00-17:00</p>
+
+        <h2> Hafðu samband</h2>
+        <ul>
+            <li>Listasafnið, skrifstofur
+                <ul>
+                    <li>Listagata 1</li>
+                    <li>101 Reykjavík</li>
+                    <li>Sími 234-2345</li>
+                    <li>listasafnid@example.org</li>
+                </ul>
+            </li>
+            <li>Listasafnið, sýningarsalur
+                <ul>
+                    <li>Listagata 10</li>
+                    <li>101 Reykjavík</li>
+                    <li>Sími 234-2360</li>
+                    <li>listasafnid-syningarsalur@example.org</li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>
